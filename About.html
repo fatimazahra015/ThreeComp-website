@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThreeCoomp</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> <!------DONE--------->
+    <link rel="stylesheet" href="chemin/vers/fontawesome/css/all.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index2.html"><img src="img/logo2.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i> <!-- Icône de fermeture -->
+                <i class=></i>
+                <ul>
+                    <li><a href="index2.html">HOME</a></li>
+                    <li><a href="Expertise.html">EXPERTISE</a></li>
+                    <li><a href="Solution.html">SOLUTIONS</a></li>
+                    <li><a href="Team.html">TEAM</a></li>
+                    <li><a href="materiel.html">MATERIEL</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                    <li><a href="About.html">ABOUT</a></li> 
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i> <!-- Icône du menu -->
+        </nav>
+    <h1>About</h1>
+    </section>
+
+<!---------------about us content------------------->
+
+<section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h1>Who we are</h1>
+            <p>THREECOMP GROUP vous accompagne dans la mise en place<br>
+                et la réussite de votre projet grâce à des solutions<br> 
+                technologiques innovantes et développées sur mesure.</p>
+                <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+        </div>
+    </div>
+
+</section>
+<!-------------------------Fin About-us-------------------------->
+<!---------------Footer------------------------------------------>
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <a href="index2.html"><img src="img/logo2.png" alt=""></a>
+                <p>THREECOMP GROUP vous accompagne dans la mise en place<br>
+                    et la réussite de votre projet grâce à des solutions<br>
+                    technologiques innovantes et développées sur mesure.<br>
+                    Notre quotidien consiste à équiper vos infrastructures<br>
+                    informatiques et technologiques et à vous guider dans vos <br>
+                    choix de développement stratégiques.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Accès rapide</h4>
+                <ul>
+                    <li><a href="index2.html">Home</a></li>
+                    <li><a href="Expertise.html">EXPERTISE</a></li>
+                    <li><a href="Solution.html">SOLUTIONS</a></li>
+                    <li><a href="Team.html">TEAM</a></li>
+                    <li><a href="">MATERIEL</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                    <li><a href="About.html">ABOUT</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>get help</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">shipping</a></li>
+                    <li><a href="#">returns</a></li>
+                    <li><a href="#">order status</a></li>
+                    <li><a href="#">payment options</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/threecomp.maroc/?locale=en_GB"><i class="fab fa-facebook"></i></a>  
+                    <a href="https://www.instagram.com/threecomprabat/"><i class="fab fa-instagram"></i></a>    
+                    <a href="index2.html"><i class="fab fa-twitter"></i></a>    
+                    <a href="https://fr.linkedin.com/company/three-comp"><i class="fab fa-linkedin"></i></a>    
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+<!--------- Script  JS  [ for show and hide ]  icone menu and close ---------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+<!--------------------------- FIN SCRIPT -------------------------------------->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!------------------------- Initialize Swiper --------------------------------->
+    <script type="text/javascript">
+        var swiper = new Swiper(".card_slider", {
+            slidesPerView: 3,
+            spaceBetween: 1,
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
